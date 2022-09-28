@@ -8,3 +8,6 @@ body {
     background-size: 800px;
     background-position: 90% -25%;
 }
+.btn {
+    @apply p-3 px-6 pt-2  bg-brightRed text-white rounded-full hover:opacity-90;
+}
