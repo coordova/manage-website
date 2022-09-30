@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/script.js" defer></script>
     <title>Manage Landing Page</title>
 </head>
 <body>
@@ -26,10 +27,24 @@
                 <a href="#community" class="hover:text-darkGrayishBlue">Community</a>
             </div>
             <!-- Get Started Button -->
-            <a href="#" class="btn">Get Started</a>
+            <a href="#" class="btn hidden md:block">Get Started</a>
+            <!-- Hamburger Button -->
+            <button id="menu-btn" class="z-30 block md:hidden focus:outline-none hamburger">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
         </div>
         <!-- Mobile Menu -->
-
+        <div>
+            <div id="menu" class="absolute hidden flex-col space-y-6 items-center bg-white p-8 shadow-md font-bold top-24 left-6 right-6 max-w-lg mx-auto">
+                <a href="#">Pricing</a>
+                <a href="#">Product</a>
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Community</a>
+            </div>
+        </div>
     </nav>
     <!-- Hero Section -->
     <section id="hero">
@@ -170,8 +185,51 @@
     </section>
     <!-- Footer -->
     <footer class="bg-veryDarkBlue">
-        <div class="container mx-auto flex">
+        <div class="container mx-auto flex flex-col space-y-8 px-6 py-16 text-white md:flex-row-reverse md:justify-between md:items-start md:space-y-0">
+            <!-- input container -->
+            <div class="flex flex-row justify-between items-center space-x-4">
+                <input type="text" class="flex-1 px-4 py-2 rounded-full bg-white placeholder:text-darkGrayishBlue" placeholder="Updated in your inbox">
+                <button class="p-3 px-6 pt-2  bg-brightRed text-white rounded-full hover:opacity-90">
+                    Go
+                </button>
+            </div>
+            <!-- menu -->
+            <div class="flex justify-between px-8">
+                <!-- menu1 -->
+                <div class="flex flex-col items-start space-y-4">
+                    <a href="#">Home</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Products</a>
+                    <a href="#">About</a>
+                </div>
+                <!-- menu2 -->
+                <div class="flex flex-col items-start space-y-4">
+                    <a href="#">Careers</a>
+                    <a href="#">Community</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+            <!-- social & logo -->
+            <div class="flex flex-col items-center space-y-12 md:flex-col-reverse md:items-start">
+                <!-- social -->
+                <div class="flex justify-center items-start space-x-4">
+                    <img src="img/icon-facebook.svg" alt="fb" class="h-8">
+                    <img src="img/icon-youtube.svg" alt="yt" class="h-8">
+                    <img src="img/icon-twitter.svg" alt="tw" class="h-8">
+                    <img src="img/icon-pinterest.svg" alt="pt" class="h-8">
+                    <img src="img/icon-instagram.svg" alt="ig" class="h-8">
+                </div>
 
+                <!-- logo -->
+                <div class=" ">
+                    <img src="img/logo-white.svg" alt="logo" class="h-8">
+                </div>
+
+            </div>
+            <!-- copyright -->
+            <div class="mx-auto">
+                Copyright © 2022, All Rights Reserved
+            </div>
         </div>
     </footer>
 </body>
