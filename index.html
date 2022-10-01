@@ -28,27 +28,13 @@
             </div>
             <!-- Get Started Button -->
             <a href="#" class="btn hidden md:block">Get Started</a>
-            <!-- Hamburger Button -->
-            <button id="menu-btn" class="z-30 block md:hidden focus:outline-none hamburger">
-                <span class="hamburger-top"></span>
-                <span class="hamburger-middle"></span>
-                <span class="hamburger-bottom"></span>
-            </button>
+
         </div>
-        <!-- Mobile Menu -->
-        <div>
-            <div id="menu" class="absolute hidden flex-col space-y-6 items-center bg-white p-8 shadow-md font-bold top-24 left-6 right-6 max-w-lg mx-auto">
-                <a href="#">Pricing</a>
-                <a href="#">Product</a>
-                <a href="#">About Us</a>
-                <a href="#">Careers</a>
-                <a href="#">Community</a>
-            </div>
-        </div>
+
     </nav>
     <!-- Hero Section -->
     <section id="hero">
-        <div class="container flex flex-col text-center px-6 mx-auto mt-10 md:flex-row-reverse items-start mb-40">
+        <div class="container flex flex-col text-center px-6 mx-auto mt-10 items-start mb-32 md:flex-row-reverse">
             <!-- imagen -->
             <div class="md:w-1/2">
                 <img src="img/illustration-intro.svg" alt="intro">
@@ -185,16 +171,21 @@
     </section>
     <!-- Footer -->
     <footer class="bg-veryDarkBlue">
-        <div class="container mx-auto flex flex-col space-y-8 px-6 py-16 text-white md:flex-row-reverse md:justify-between md:items-start md:space-y-0">
+        <div class="container mx-auto flex flex-col space-y-8 px-6 py-10 text-white md:flex-row-reverse md:justify-between  md:space-y-0">
             <!-- input container -->
-            <div class="flex flex-row justify-between items-center space-x-4">
-                <input type="text" class="flex-1 px-4 py-2 rounded-full bg-white placeholder:text-darkGrayishBlue" placeholder="Updated in your inbox">
-                <button class="p-3 px-6 pt-2  bg-brightRed text-white rounded-full hover:opacity-90">
-                    Go
-                </button>
+            <div class="flex flex-col justify-between">
+                <form action="#">
+                    <div class="flex flex-row space-x-3">
+                        <input type="text" class="flex-1 px-4 py-2 rounded-full bg-white placeholder:text-darkGrayishBlue" placeholder="Updated in your inbox">
+                        <button class="p-3 px-6 pt-2  bg-brightRed text-white rounded-full hover:opacity-90">Go</button>
+                    </div>
+                </form>
+                <div class="hidden md:block">
+                    Copyright © 2022, All Rights Reserved
+                </div>
             </div>
             <!-- menu -->
-            <div class="flex justify-between px-8">
+            <div class="flex justify-between md:space-x-20 px-8">
                 <!-- menu1 -->
                 <div class="flex flex-col items-start space-y-4">
                     <a href="#">Home</a>
@@ -210,7 +201,7 @@
                 </div>
             </div>
             <!-- social & logo -->
-            <div class="flex flex-col items-center space-y-12 md:flex-col-reverse md:items-start">
+            <div class="flex flex-col items-center space-y-12 md:justify-between md:space-y-0 md:flex-col-reverse md:items-start">
                 <!-- social -->
                 <div class="flex justify-center items-start space-x-4">
                     <img src="img/icon-facebook.svg" alt="fb" class="h-8">
@@ -221,13 +212,13 @@
                 </div>
 
                 <!-- logo -->
-                <div class=" ">
+                <div class="">
                     <img src="img/logo-white.svg" alt="logo" class="h-8">
                 </div>
 
             </div>
             <!-- copyright -->
-            <div class="mx-auto">
+            <div class="mx-auto md:hidden">
                 Copyright © 2022, All Rights Reserved
             </div>
         </div>
