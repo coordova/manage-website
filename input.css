@@ -2,12 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    h1 {
+        @apply animar-con-animatecss;
+    }
+}
 body {
     background-image: url('../img/bg-tablet-pattern.svg');
     background-repeat: no-repeat;
     background-size: 800px;
     background-position: 90% -25%;
 }
+
 #cta {
     background-image: url('../img/bg-simplify-section-desktop.svg');
     background-repeat: no-repeat;
@@ -75,3 +81,14 @@ body {
     transform: rotate(-45deg) translateY(6px) translateX(-6px);
     background-color: #fff;
 }
+
+/*----------------------------------*/
+/* animate.css para usar con tailwind */
+.animar-con-animatecss {
+    display: inline-block;
+    margin: 0 0.5rem;
+
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+/*-----------------------------------*/
