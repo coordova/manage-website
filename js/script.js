@@ -1,5 +1,6 @@
 const btn = document.getElementById('menu-btn')
 const menu = document.getElementById('menu')
+const logo = document.getElementById('logo')
 // Hamburger button listener
 btn.addEventListener('click', navToggle)
 function navToggle() {
@@ -7,9 +8,9 @@ function navToggle() {
     menu.classList.toggle('flex')
     menu.classList.toggle('hidden')
 
-    /* if (menu.classList.contains('flex')) {
-        logo.setAttribute('src', './images/logo-bookmark-footer.svg')
+    if (menu.classList.contains('flex')) {
+        logo.setAttribute('src', './img/logo-white.svg')
     } else {
-        logo.setAttribute('src', './images/logo-bookmark.svg')
-    } */
+        logo.setAttribute('src', './img/logo.svg')
+    }
 }

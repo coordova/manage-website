@@ -15,16 +15,16 @@
         <!-- Flex Container For Nav Items -->
         <div class="flex flex-row justify-between items-center">
             <!-- Logo -->
-            <div class="pt-2">
-                <img src="img/logo.svg" alt="" id="logo" />
+            <div class="pt-2 z-30">
+                <img src="img/logo.svg" alt="" id="logo"  />
             </div>
             <!-- Menu Items -->
             <div class="hidden items-center space-x-6 md:flex">
-                <a href="#pricing" class="hover:text-darkGrayishBlue">Pricing</a>
-                <a href="#product" class="hover:text-darkGrayishBlue">Product</a>
-                <a href="#aboutus" class="hover:text-darkGrayishBlue">About Us</a>
-                <a href="#careers" class="hover:text-darkGrayishBlue">Careers</a>
-                <a href="#community" class="hover:text-darkGrayishBlue">Community</a>
+                <a href="#hero" class="hover:text-darkGrayishBlue">Pricing</a>
+                <a href="#features" class="hover:text-darkGrayishBlue">Product</a>
+                <a href="#testimonials" class="hover:text-darkGrayishBlue">About Us</a>
+                <a href="#cta" class="hover:text-darkGrayishBlue">Careers</a>
+                <a href="#footer" class="hover:text-darkGrayishBlue">Community</a>
             </div>
             <!-- Get Started Button -->
             <a href="#" class="btn hidden md:block">Get Started</a>
@@ -37,12 +37,13 @@
         </div>
         <!-- Mobile Menu -->
         <div>
-            <div id="menu" class="absolute hidden flex-col space-y-6 items-center bg-white p-8 shadow-md font-bold top-24 left-6 right-6 max-w-lg mx-auto">
-                <a href="#">Pricing</a>
-                <a href="#">Product</a>
-                <a href="#">About Us</a>
-                <a href="#">Careers</a>
-                <a href="#">Community</a>
+            <!-- <div id="menu" class="absolute hidden flex-col space-y-6 items-center bg-white p-8 shadow-md font-bold top-24 left-6 right-6 max-w-lg mx-auto"> -->
+            <div id="menu" class="absolute  z-20  hidden flex-col space-y-6 items-center uppercase text-white bg-brightRed p-8 py-20 shadow-md font-semibold top-0 left-0 right-0 w-full  opacity-90">
+                <a href="#hero">Pricing</a>
+                <a href="#features">Product</a>
+                <a href="#testimonials">About Us</a>
+                <a href="#cta">Careers</a>
+                <a href="#footer">Community</a>
             </div>
         </div>
     </nav>
@@ -184,7 +185,7 @@
         </div>
     </section>
     <!-- Footer -->
-    <footer class="bg-veryDarkBlue">
+    <footer id="footer" class="bg-veryDarkBlue">
         <div class="container mx-auto flex flex-col space-y-8 px-6 py-10 text-white md:flex-row-reverse md:justify-between  md:space-y-0">
             <!-- input container -->
             <div class="flex flex-col justify-between">
