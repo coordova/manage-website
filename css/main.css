@@ -413,8 +413,8 @@ video {
 h1 {
   display: inline-block;
   margin: 0 0.5rem;
-  -webkit-animation: bounce;
-          animation: bounce;
+  -webkit-animation: pulse;
+          animation: pulse;
   /* referring directly to the animation's @keyframe declaration */
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
@@ -1050,8 +1050,8 @@ body {
 .animar-con-animatecss {
   display: inline-block;
   margin: 0 0.5rem;
-  -webkit-animation: bounce;
-          animation: bounce;
+  -webkit-animation: pulse;
+          animation: pulse;
   /* referring directly to the animation's @keyframe declaration */
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
